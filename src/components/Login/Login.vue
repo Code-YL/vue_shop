@@ -51,7 +51,7 @@ export default {
                 if(!valid) return;
                 //const abc = JSON.parse(JSON.stringify(this.login_form))
                 const result = await login_in(this.login_form)
-                console.log(result);
+                // console.log(result);
                 if(result.meta.status !== 200) return this.$message.error('登录失败！');
                 this.$message.success('登录成功！')
                 window.sessionStorage.setItem('token',result.data.token)

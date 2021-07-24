@@ -11,7 +11,7 @@ module.exports={
         .set('@',resolve('./src'))
         .set('components',resolve('./src/components'))
         .set('assets',resolve('./src/assets'))
-        // .set('views',resolve('./src/views'))
+        .set('views',resolve('./src/views'))
         .set('network',resolve('./src/network'))
         //注意 store 和 router 没必要配置　
     }

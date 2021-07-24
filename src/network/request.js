@@ -10,6 +10,8 @@ export function request(config) {
     // 2.axios的拦截器
     // 2.1.请求拦截的作用
     instance.interceptors.request.use(config => {
+        config.headers.Authorization = window.sessionStorage.getItem('token')
+        // console.log(config)
         return config
     }, err => {
         // console.log(err);
@@ -24,4 +26,13 @@ export function request(config) {
 
     // 3.发送真正的网络请求
     return instance(config)
+}
+
+export const policyInterface = (url,type,params = null,data = null) => {
+    return request({
+        url,
+        method:type,
+        params,
+        data
+    })
 }
