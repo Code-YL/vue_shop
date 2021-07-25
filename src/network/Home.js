@@ -1,4 +1,4 @@
-import { request, } from "./request";
+import { request } from "./request";
 
 export function getMenusList(){
     return request({
@@ -43,5 +43,12 @@ export function removeUser(url) {
     return request({
         url,
         method:'delete'
+    })
+}
+export function saveRoleInfo(url,data){
+    return request({
+        url,
+        method:'put',
+        data
     })
 }
