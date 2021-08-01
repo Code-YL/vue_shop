@@ -1,7 +1,7 @@
 <template>
   <div>
     <img src="~assets/images/juju.jpg" alt="">
-    <p>你好啊，沙墩</p>
+    <p>你好啊，管理者</p>
   </div>
 </template>
 
