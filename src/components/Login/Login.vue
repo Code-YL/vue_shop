@@ -3,7 +3,7 @@
         <div class="login_box">
             <!-- 头像区域 -->
             <div class="avatar_box">
-                <img src="@/assets/images/juju.jpg" alt="">
+                <img src="@/assets/logo.png" alt="">
             </div>
             <!-- 表单区域 -->
             <el-form :model="login_form" class="login_form" :rules='loginForm_rules' ref="loginFormRef" enctype="application/x-www-form-urlencoded">
@@ -94,10 +94,12 @@ export default {
             border:1px solid #eee;
             border-radius: 50%;
             padding: 10px;
-            background-color: #FDE3E6;
+            background-color: #fff;
             box-shadow: 0 0 10px #ddd;
             img{
                 width: 100%;
+                background-color: #eee;
+                border-radius: 50%;
             }
         }
         .login_form{

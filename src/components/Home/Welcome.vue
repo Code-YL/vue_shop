@@ -1,6 +1,6 @@
 <template>
   <div>
-    <img src="~assets/images/juju.jpg" alt="">
+    <img src="~assets/images/head.jpg" alt="">
     <p>你好啊，管理者</p>
   </div>
 </template>
